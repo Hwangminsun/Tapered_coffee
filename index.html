@@ -1,0 +1,366 @@
+<?
+
+  session_start();
+
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAPERED COFFEE</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+  <script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/slick.css">
+ 
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/bottomnav.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick_taper.js"></script>
+
+</head>
+<body>
+  <ul id="skip-menu">
+    <li><a href="#two">&#187; 내용 바로가기</a></li>
+    <li><a href="#footer">&#187; 하단 바로가기</a></li>
+  </ul>
+
+  <header class="cf">
+    <!-- 모바일 햄버거 버튼 -->
+    <div id="ham-wrap">
+      <div class="hamburger">
+         <span></span>  <span></span> <span></span> 
+      </div> 
+  </div>
+
+    <h1><a href="index.html"><img src="img/taper-logo.png" alt="logo"></a></h1>
+    <!-- 태블릿, pc 버전 사용 -->
+    <ul id="right">
+       <? include "php/top_login2.php"; ?>
+        <li><a href="javascript:void(0)"><i class="fa-solid fa-file-pen"></i></li>
+        <li><a href="javascript:void(0)" class="r_service">Service</a></li>
+        <li><a href="javascript:void(0)"class="r_location"><i class="fa-solid fa-map"></i></a></li>
+        <li><a href="javascript:void(0)" class="r_location">Location</a></li>
+    </ul>
+  </header>
+
+  <!-- 모바일 버전 사용 -->
+  <div class="bottomNav" id="usp_sell">
+    <ul>
+      
+      <? include "php/top_login1.php"; ?>
+      
+    </ul>
+  </div>
+
+  <nav id="menu-wrap"> <!--메뉴 전체-->
+      <ul class="menu">
+        <li><a href="#" onclick="return false;" class="">Menu</a></li>
+        <li><a href="#" onclick="return false;">Store</a></li>
+        <li><a href="#" onclick="return false;">Brand</a></li>
+      </ul>   
+  </nav>
+
+  <aside>
+    <div class="go-top"></div>
+  </aside>
+
+  <!-- 모바일 화면-->
+  <section id="one">
+    <div id="img">
+      <ul class="cf ab1">
+      <li><a href="gallery.html"><img src="img/taper1.png" alt="매장사진1"></a></li>
+      <li><a href="gallery.html"><img src="img/taper36_size.png" alt="매장사진2"></a></li>
+      <li><a href="gallery.html"><img src="img/taper10.png" alt="매장사진3"></a></li>
+      <li><a href="gallery.html"><img src="img/taper25.png" alt="매장사진4"></a></li>
+      <li><a href="gallery.html"><img src="img/taper32.png" alt="매장사진5"></a></li>
+      <li><a href="gallery.html"><img src="img/taper33.png" alt="매장사진7"></a></li>
+      </ul>
+    </div>
+
+    <div id="biglogo">
+      <ul>
+        <li class="ab2"><img src="img/taper-logo.png" alt="테이퍼드커피로고"></li>
+        <li class="ab2">&bull; seriously good coffee & bread &#45;</li>
+        <li class="ab2"><button type="button" onclick="location.href='php/member_form.php'">Join us</button></li>
+        <li class="day ab3">TAPERED COFFEE WILL MAKE YOUR DAY
+          <br>A SUPER-DUPER DAY : &#41;</li>
+      </ul>
+    </div>
+</section>
+
+<!-- 태블릿 , pc 화면 -->
+<section id="two">
+  <h2 class="wp1"><img src="img/taper-logo.png" alt="테이퍼드커피로고"></h2>
+  <div id="coffee" class="wp1">
+    <ul>
+      <li class="bread">&bull; seriously good coffee & bread &#45;</li>
+      <li><button type="button" onclick="return false;">Join us</button></li>
+    </ul>
+  </div>
+  <div id="image">
+    <ul class="slide wp2"> <!--wp9-->
+      <li><a href="gallery.html"><img src="img/taper1.png" alt="매장사진1"></a></li>
+      <li><a href="gallery.html"><img src="img/taper36_size.png" alt="매장사진2"></a></li>
+      <li><a href="gallery.html"><img src="img/taper10.png" alt="매장사진3"></a></li>
+      <li><a href="gallery.html"><img src="img/taper25.png" alt="매장사진4"></a></li>
+      <li><a href="gallery.html"><img src="img/taper32.png" alt="매장사진5"></a></li>
+      <li><a href="gallery.html"><img src="img/taper33.png" alt="매장사진6"></a></li>
+    </ul>
+    <p class="wp3">TAPERED COFFEE WILL MAKE YOUR DAY
+        <br>A SUPER-DUPER DAY : &#41;</p>
+  </div>
+</section>
+
+<section id="review">
+  <i class="fa-solid fa-window-minimize"></i>
+  <h2>Review</h2>
+  <ul>
+    <li>
+      <p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>3 months ago
+      </p>
+      <span class="re_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. 
+      </span>
+      <span class="re_2"><b>- oatmeal</b></span>
+    </li>
+    <li>
+      <p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>4 months ago
+      </p>
+      <span class="re_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc.   
+      </span>
+      <span><b>- cereal</b></span>
+    </li>
+    <li>
+      <p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>6 months ago
+      </p>
+      <span class="re_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. 
+      </span>
+      <span><b>- sun</b></span>
+    </li>
+    <li>
+    </li>
+  </ul>
+  <div id="read_more">
+    <div><a href="php/list.php">WRITE A REVIEW</a></div>
+    <div><a href="php/list.php">READ MORE</a></div>
+  </div>
+</section>
+
+<!-- 갤러리, 모바일 사용 -->
+<section id="gallery">
+  <i class="fa-solid fa-window-minimize"></i>
+  <h2>Gallery</h2>
+  <ul class="photo">
+    <li class="ab4"><a href="gallery.html">
+      <img src="img/taper23.png" alt="갤러리사진1"></a></li>
+    <li class="ab4 delay-05s"><a href="gallery.html">
+      <img src="img/taper15.png" alt="갤러리사진2"></a></li>
+    <li class="ab4 delay-08s"><a href="gallery.html">
+      <img src="img/taper27.png" alt="갤러리사진3"></a></li>
+    <li class="ab4 delay-1s"><a href="gallery.html">
+      <img src="img/taper14.png" alt="갤러리사진4"></a></li>
+    <li class="ab4 delay-15s"><a href="gallery.html">
+      <img src="img/taper28.png" alt="갤러리사진5"></a></li>
+    <li class="ab4 delay-2s"><a href="gallery.html">
+      <img src="img/taper22.png" alt="갤러리사진6"></a></li>
+    </ul>
+  </section>
+
+<!-- 갤러리, 태블릿 사용 -->
+<section id="gallery1" class="cf">
+  <i class="fa-solid fa-window-minimize"></i>
+  <h2>Gallery</h2>
+  <ul class="photo1">
+    <li class="wp4 delay-05s"><a href="gallery.html">
+      <img src="img/taper23.png" alt="갤러리사진1"></a></li>
+    <li class="wp4"><a href="gallery.html">
+      <img src="img/taper15.png" alt="갤러리사진2"></a></li>
+    <li class="wp4 delay-08s"><a href="gallery.html">
+      <img src="img/taper27.png" alt="갤러리사진3"></a></li>
+    <li class="wp4 delay-08s"><a href="gallery.html">
+      <img src="img/taper14.png" alt="갤러리사진4"></a></li>
+    <li class="wp4 delay-1s"><a href="gallery.html">
+      <img src="img/taper28.png" alt="갤러리사진5"></a></li>
+    <li class="wp4 delay-1s"><a href="gallery.html">
+      <img src="img/taper22.png" alt="갤러리사진6"></a></li>
+    </ul>
+  </section>
+
+<!-- 갤러리, pc 사용 -->
+<section id="gallery2" class="cf">
+  <i class="fa-solid fa-window-minimize"></i>
+  <h2>Gallery</h2>
+  <ul class="photo2">
+    <li class="wp4"><a href="gallery.html">
+      <img src="img/taper23.png" alt="갤러리사진1"></a></li>
+    <li class="wp4"><a href="gallery.html">
+      <img src="img/taper15.png" alt="갤러리사진2"></a></li>
+    <li class="wp4"><a href="gallery.html">
+      <img src="img/taper27.png" alt="갤러리사진3"></a></li>
+    <li class="wp4 delay-05s"><a href="gallery.html">
+      <img src="img/taper14.png" alt="갤러리사진4"></a></li>
+    <li class="wp4 delay-05s"><a href="gallery.html">
+      <img src="img/taper28.png" alt="갤러리사진5"></a></li>
+    <li class="wp4 delay-05s"><a href="gallery.html">
+      <img src="img/taper22.png" alt="갤러리사진6"></a></li>
+    <li class="wp4 delay-1s"><a href="gallery.html">
+      <img src="img/taper16.png" alt="갤러리사진7"></a></li>
+    <li class="wp4 delay-1s"><a href="gallery.html">
+      <img src="img/taper46.png" alt="갤러리사진8"></a></li>
+    <li class="wp4 delay-1s"><a href="gallery.html">
+      <img src="img/taper30.png" alt="갤러리사진9"></a></li>
+  </ul>
+</section>
+
+<!-- contact us, 모든 화면 사용 -->
+<section id="contact">
+  <i class="fa-solid fa-window-minimize"></i>
+  <h2>Contact us</h2>
+  <ul class="cf">
+    <li><a href="javascript:void(0)" class="selec">
+      <i class="fa-solid fa-comment-dots"></i>
+      <span>contact us</span></a></li>
+    <li><a href="javascript:void(0)">
+      <i class="fa-solid fa-user-group"></i>
+      <span>recruit</span></a></li>
+    <li><a href="javascript:void(0)">
+      <i class="fa-solid fa-gift"></i>
+      <span>catering</span></a></li>
+  </ul>
+</section>
+
+<p class="dn wp5">It may be too and you may not be able to stop eating.
+  <br>An overdose may make you super-duper happy.
+   <br>Yummy to the tummy : &#41;
+ </p>
+
+
+<!-- 메뉴 슬릭 -->
+<section id="drink">
+  <i class="fa-solid fa-window-minimize"></i>
+   <h2>Menu</h2>
+  <!-- <h3>테이퍼드커피 x COFFEE x BISCUITERIE</h3> -->
+
+  <div class="mmnu">
+    <div class="slick-slide">
+      <img src="img/taper22.png" alt="이미지">
+      <div class="m_filter"></div>
+      <span>Cream mocha</span></div>
+    <div class="slick-slide">
+      <img src="img/taper4.png" alt="이미지">
+      <div class="m_filter"></div>
+      <span>Vanilla bean double shot(ICE)</span></div>
+    <div class="slick-slide">
+      <img src="img/taper3.png" alt="이미지">
+      <div class="m_filter"></div>
+      <span>Carrot cake scookie</span></div>
+    <div class="slick-slide">
+      <img src="img/taper26.png" alt="이미지">
+      <div class="m_filter"></div>
+      <span>fig & bluecheese scone</span></div>
+    <div class="slick-slide">
+      <img src="img/taper44.png" alt="이미지">
+      <div class="m_filter"></div>
+      <span>Lemon pound cake</span></div>
+    <div class="slick-slide">
+      <img src="img/taper57.png" alt="이미지">
+      <div class="m_filter"></div>
+      <span>Raspberry lemon scookie</span></div>
+      <div class="slick-slide">
+      <img src="img/taper40.png" alt="이미지">
+      <div class="m_filter"></div>
+      <span>Banana bread</span></div>
+      <div class="slick-slide">
+      <img src="img/taper49.png" alt="이미지">
+      <div class="m_filter"></div>
+      <span>Americano</span></div>
+  </div>
+  </section>
+
+
+ <!-- 커핑 아이콘 -->
+<section id="drop">
+  <!-- <i class="fa-solid fa-window-minimize"></i> -->
+  <i class="fa-solid fa-window-minimize"></i>
+   <h2>Cupping</h2>
+  <ul class="cf wp6">
+    <li><a href="contactus.html" class="add"><span class="cup">Cupping</span></a>
+      <div class="overlay"></div>    
+      <div class="button">Register</div></li>
+    <li><a href="contactus.html" class="add"><span class="cup">Latte art</span></a>
+      <div class="overlay"></div>    
+      <div class="button">Register</div></li>
+    <li><a href="contactus.html" class="add"><span class="cup">Drip</span></a>
+      <div class="overlay"></div>    
+      <div class="button">Register</div></li>
+  </ul>
+</section>
+
+<!-- 모바일 사용 화면 -->
+<section id="cafeloca">
+  <i class="fa-solid fa-window-minimize"></i>
+  <h2>Cafe Location</h2>
+  <ul class="out">
+    <li class="ab5 delay-02s"><img src="img/taper18.png" alt="매장사진"></li>
+    <li class="ab7 delay-02s">
+      <ul class="in">
+        <li>1st&#46; Oksu 옥수</li>
+        <li>2nd&#46; Deungchon 등촌</li>
+        <li>3rd&#46; Seonjeongneung 선정릉</li>
+        <li>4th&#46; Mapo (taperedcoffee stand) 마포</li>
+        <li>5th&#46; Heukseok 흑석</li>
+      </ul>
+    </li>
+    <li>
+      <button type="button" class="ab7 delay-02s" onclick="location.href='store.html'">Get Direction</button></li>
+  </ul>
+</section>
+
+<!-- 태블릿, pc 사용 화면 -->
+<section id="cafe_resize" class="cf">
+  <i class="fa-solid fa-window-minimize"></i>
+  <h2>Cafe Location</h2>
+  <div id="center" class="wp7 delay-02s">
+  <img src="img/taper18.png" alt="매장사진">
+    <ul class="inner">
+        <li>1st&#46; Oksu 옥수</li>
+        <li>2nd&#46; Deungchon 등촌</li>
+        <li>3rd&#46; Seonjeongneung 선정릉</li>
+        <li>4th&#46; Mapo (taperedcoffee stand) 마포</li>
+        <li>5th&#46; Heukseok 흑석
+        <li><button type="button" onclick="window.open('https://www.google.co.kr/maps/dir//%ED%85%8C%EC%9D%B4%ED%8D%BC%EB%93%9C%EC%BB%A4%ED%94%BC+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%B1%EB%8F%99%EA%B5%AC+%EC%98%A5%EC%88%98%EB%8F%99+%EB%8F%85%EC%84%9C%EB%8B%B9%EB%A1%9C+216/data=!4m8!4m7!1m0!1m5!1m1!1s0x357ca32d112d5501:0xec92fb3b58a4e7f0!2m2!1d127.0147724!2d37.5435536?hl=ko')">Get Direction</button></li>
+      </ul>
+    </div>
+</section>
+ 
+<footer>
+  <div id="footer"><a href="https://www.instagram.com/taperedcoffee/"
+    target="_blank">photo by TAPERED COFFEE INSTAGRAM</a></div>
+</footer>
+
+</body>
+</html>

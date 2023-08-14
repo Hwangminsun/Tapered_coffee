@@ -1,0 +1,114 @@
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* 숨기는 css */ 
+.wp1, .wp2, .wp3, .wp4, .wp6, .wp7, .ab1, .ab2, .ab3, .ab4, .ab5, .ab6, .ab7
+  {visibility:hidden;}
+
+.fadeIn, .fadeInUp, .fadeInLeft, .fadeInOut
+  {visibility:visible;} 
+
+/* fadeIn */
+.fadeIn {animation: fadeIn 1s alternate;}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+/* fadeInLeft */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration:0.7s;
+  animation-duration:0.7s;
+}
+
+@keyframes fadeInLeft {
+0% {
+opacity: 0;
+-webkit-transform: translateX(-400px);
+-ms-transform: translateX(-400px);
+transform: translateX(-400px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateX(0);
+-ms-transform: translateX(0);
+transform: translateX(0);
+}
+}
+
+/* fadeInUp */
+.fadeInUp {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp;
+-webkit-animation-duration:1s;
+animation-duration:1s;
+}
+
+@-webkit-keyframes fadeInUp {
+0% {
+opacity: 0;
+-webkit-transform: translateY(60px);
+transform: translateY(60px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+transform: translateY(0);
+}
+}
+
+/* fadeInOut */
+.fadeInOut { /*애니메이션 줄 클래스*/
+-webkit-animation-name: fadeInOut;
+animation-name: fadeInOut;
+-webkit-animation-duration:0.8s;
+animation-duration:0.8s;
+}
+
+@-webkit-keyframes fadeInOut {
+0% {
+opacity: 0;
+-webkit-transform: translateY(0px);
+transform: translateY(0px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateY(50px);
+transform: translateY(50px);
+  }
+}
+
+/* delay */
+    .delay-02s { animation-delay: 0.2s; -webkit-animation-delay: 0.2s; }
+    .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s;}
+    .delay-08s { animation-delay: 0.8s; -webkit-animation-delay: 0.8s;}
+    .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+    .delay-15s { animation-delay: 1.5s; -webkit-animation-delay: 1.5s; }
+    .delay-17s { animation-delay: 1.7s; -webkit-animation-delay: 1.7s; }
+    .delay-2s { animation-delay: 2s; -webkit-animation-delay: 2s; }
+
+
+/* Location */
+@keyframes flash {
+  0% {
+          opacity: 0.4;
+  }
+  100% {
+          opacity: 1;
+  }
+}

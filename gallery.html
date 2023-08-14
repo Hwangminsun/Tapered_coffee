@@ -1,0 +1,153 @@
+<?
+
+  session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAPERED COFFEE</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/slick.css">
+
+  <script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/bottomnav.js"></script>
+  <script src="js/gallery.js"></script>
+</head>
+
+<body>
+  <div id="skip-menu">
+    <li><a href="#gallery">&#187; 내용 바로가기</a></li>
+    <li><a href="#footer">&#187; 하단 바로가기</a></li>
+  </div>
+
+  <header class="cf">
+    <!-- 모바일 햄버거 버튼 -->
+    <div id="ham-wrap">
+      <div class="hamburger">
+         <span></span>  <span></span> <span></span> 
+      </div> 
+  </div>
+
+    <h1><a href="index.html"><img src="img/taper-logo.png" alt="logo"></a></h1>
+    <!-- 태블릿, pc 버전 사용 -->
+    <ul class="right">
+      <? include "php/top_login2.php"; ?>
+        <li><a href="javascript:void(0)"><i class="fa-solid fa-file-pen"></i></li>
+        <li><a href="#contact">Service</a></li>
+        <li><a href="javascript:void(0)"><i class="fa-solid fa-map"></i></a></li>
+        <li><a href="#cafe_resize">Location</a></li>
+    </ul>
+  </header>
+
+  <!-- 모바일 버전 사용 -->
+  <div class="bottomNav" id="usp_sell">
+    <ul>
+      <li><a href="#" class="current"><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+      <li><a class="map" href="#cafeloca"><i class="fa-solid fa-map"></i></a></li>
+      <li><a href="#contact"><i class="fa-solid fa-file-pen"></i></a></li>
+      <li><a href="javascript:void(0)">Login</a></li>
+      <li><a href="javascript:void(0)">Location</a></li>
+      <li><a href="javascript:void(0)">Service</a></li>
+    </ul>
+  </div>
+
+  <nav id="menu-wrap"> <!--메뉴 전체-->
+      <ul class="menu">
+        <li><a href="#" onclick="return false;">Menu</a></li>
+        <li><a href="#" onclick="return false;">Store</a></li>
+        <li><a href="#" onclick="return false;">Brand</a></li>
+      </ul>   
+  </nav>
+
+  <aside>
+    <div class="go-top"></div>
+  </aside>
+
+  <section id="gallery">
+    <!-- 이전페이지로 가기 버튼 -->
+  <div class="btn">
+    <img src="img/left_1.png" alt="이전페이지로가기">
+  </div>
+
+  <!-- 세로 슬릭_ 썸네일 -->
+  <h2>GALLERY</h2>
+  <div class="slick_wrap1 slick_tab_wrap1">
+  <ul class="slick1 slick1_tab">
+    <li>
+        <img src="img/taper23.png" alt="매장사진1">
+    </li>
+    <li>
+        <img src="img/taper15.png" alt="매장사진2">
+    </li>
+    <li>
+        <img src="img/taper27.png" alt="매장사진3">
+    </li>
+    <li>
+        <img src="img/taper14.png" alt="매장사진4">
+    </li>
+    <li>
+        <img src="img/taper28.png" alt="매장사진5">
+    </li>
+    <li>
+        <img src="img/taper16.png" alt="매장사진6">
+    </li>
+    <li>
+        <img src="img/taper46.png" alt="매장사진7">
+    </li>
+    <li>
+        <img src="img/taper30.png" alt="매장사진8">
+    </li>
+  </ul>  
+</div>
+
+
+   <!-- 슬릭 2 -->
+   <div class="slick_wrap2 slick_tab_wrap2">
+    <h3><img src="img/logo_square.png" alt=""><span>TAPERED COFFEE</span></h3>
+    <div class="thumbs_up"></div>
+    <ul class="slick2 slick2_tab">
+      <li>
+          <img src="img/taper23.png" alt="매장사진1">
+      </li>
+      <li>
+          <img src="img/taper15.png" alt="매장사진2">
+      </li>
+      <li>
+          <img src="img/taper27.png" alt="매장사진3">
+      </li>
+      <li>
+          <img src="img/taper14.png" alt="매장사진4">
+      </li>
+      <li>
+          <img src="img/taper28.png" alt="매장사진5">
+      </li>
+      <li>
+          <img src="img/taper16.png" alt="매장사진6">
+      </li>
+      <li>
+          <img src="img/taper46.png" alt="매장사진7">
+      </li>
+      <li>
+          <img src="img/taper30.png" alt="매장사진8">
+      </li>
+    </ul>
+  </div>
+    <div class="bar"><img src="img/bar_gray3.png"></div>
+    <div class="bar2"><img src="img/bar_gray3.png"></div>
+    <div class="minus"></div>
+</section>
+
+  <footer>
+    <div id="footer"><a href="https://www.instagram.com/taperedcoffee/"
+      target="_blank">photo by TAPERED COFFEE INSTAGRAM</a></div>
+  </footer>
+</body>
+</html>

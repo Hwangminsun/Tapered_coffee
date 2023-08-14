@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+*, *::before, *::after {box-sizing: border-box;}
+a {text-decoration: none; color:#666; }
+html {width:100%; height:100%;}
+body {font-size:0.8rem; color:#666; width:100%; height:100%;}
+
+/* 모바일 메인 */
+
+header {width:100%; height:80px; border-bottom:1px solid #b4b4b4;
+    position:fixed; background: #fff;
+    box-shadow: 1px 1px 5px 1px #b4b4b4;
+    z-index:11;}
+
+#ham-wrap {cursor : pointer;}
+
+.hamburger {
+    position: relative;
+    width: 20px;
+    height: 17px;
+    margin: 35px 25px 25px 9%;
+    cursor:pointer;
+   
+}
+
+.hamburger span {
+    opacity: 1;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+/*     color: black; */
+    background: #1a25ab;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {    top: 0;  }
+.hamburger span:nth-child(2) {    top: 6px;  }
+.hamburger span:nth-child(3) {     top: 12px;  }
+.hamburger.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);  }
+.hamburger.open span:nth-child(2) {
+    opacity: 0;       /* transform: translateX(-60px);*/    }
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);   }
+         
+header h1 {float: left; line-height:80px;
+    position:absolute; top:0; left:85px;}
+header h1 a img {width:25%;}
+header .right {display:none;}
+
+/* 하단 고정 메뉴 */
+.bottomNav {
+    position: fixed;
+    width:100%;
+    background: #fff;
+    z-index:12;
+    left: 0;
+    bottom: -80px;
+    height: 80px; /*6rem */
+    font-size:1rem;
+    border-top:1px solid #b4b4b4;
+    color:#818181;
+    display:block;
+    box-shadow:5px 2px 5px 3px #b4b4b4;
+    transition: bottom 0.2s;
+  }
+.bottomNav.show {bottom:0;}
+
+.bottomNav ul {width:100%; height:80px; display:flex; justify-content: center;
+                flex-wrap: wrap;}
+.bottomNav ul li {width:33.3%; height:20px;text-align: center;
+                      margin-top:18px; margin-bottom:0;}
+/* .bottomNav ul li a.map {padding:0; position:relative; top:0px;}                       */
+.bottomNav ul li a i {font-size:1.4rem; font-weight:normal;  
+                      color: #818181; position:relative; top:7px;}
+.bottomNav ul li:nth-child(4) {font-size:0.7rem; height:20px; margin-top:7px;
+                                  margin-bottom:20px;}
+.bottomNav ul li:nth-child(5) {font-size:0.7rem; height:20px;margin-top:9px;
+                                  margin-bottom:20px;}
+.bottomNav ul li:nth-child(6) {font-size:0.7rem; height:20px;margin-top:9px;
+                                  margin-bottom:20px;}
+.bottomNav ul li a i:hover {color:#979cda; transition:all .5s;}
+
+/* 햄버거 메뉴 - 슬라이드 */
+
+
+.menu {width:400px; height:100%;
+    position:fixed; top:0px; left: -400px;
+    margin-top:80px;
+    border-right:1px solid #b4b4b4;
+    /* box-shadow:1px 1px 5px 1px #b4b4b4; */
+    z-index:10; background: #fff;
+   /* transition:all .s;*/}
+     
+.menu li {padding:50px 0 10px 50px; text-indent:35px;
+          font-size:1.1rem;  }
+.menu li a {color:#6168a8; font-weight:bold;}
+
+.menu.open { position:fixed;left:0;top:80px;width:400px;}
+
+.menu  li a:hover {font-weight:bold; color:#1a25ab; transition: all .5s;}
+
+/* 하단 푸터 */
+footer {padding-bottom:0px; text-align: center;
+    height:40px;
+    border-top:1px solid #cecccc; line-height:40px;
+    font-size:0.7rem;}
+
+/* 반응형 */
+/* 태블릿 */
+
+@media screen and (min-width:768px) { 
+    
+    .hamburger {
+                position: relative;
+                top:0; left:15px;}
+    
+    header h1 {float: left; line-height:80px;
+                position:absolute; top:0; left:150px; }
+    header h1 a img {width:20%;}
+    header .right { display:block; position:absolute; top:50%; right:100px;
+                      transform: translateY(-50%);}
+    header .right li {float:left; margin-left:35px;
+                      font-weight: bold; }
+    header .right li:nth-child(2n) {margin-left:10px;}
+    header .right li a {font-size:1rem; color:#8b8c9c;}
+    header .right li a:hover {color:#595c96;}
+    header .right li a i:hover {color:#8b8c9c;}
+    
+    .menu {z-index:10; height:100%;}
+    .menu li {text-indent:100px;} 
+    
+    /* 하단 고정 메뉴 */
+    .bottomNav {display:none;}
+    
+    /* 모바일 화면 안보이도록 */
+    #one {display:none;}
+    
+    /* 태블릿 화면 */
+    #two {width:100%; padding-top:150px; display:block;}
+    #two h2 {text-align: center;}
+    #two h2 img {width:50%;}
+    
+    #two #coffee {width:80%; margin:0px auto;
+                }
+    #two #coffee ul {width:100%; padding-top:20px;}
+    #two #coffee ul li {width:100%; text-align: center;
+                      padding-bottom:30px; font-size:1rem;}
+    #two #coffee ul li:last-child {padding-top:15px; padding-bottom:45px;}
+    #two #coffee ul li img {width:100%;}
+    #two #coffee ul li button {border:none; width:150px;
+                            height:50px; background: #1a25ab;
+                            color:#fff; font-size:1rem;
+                            cursor:pointer;}
+    #two #coffee ul li button:hover {background:#0c146b; color:#cecccc;}
+    
+    
+    #two #image {width:80%; margin:0 auto;}
+    #two #image ul {width:100%; display:flex; justify-content: center; 
+                flex-wrap: wrap; margin-bottom:70px;}
+    #two #image ul li {width:50%;}
+    #two #image ul li img {width:100%; opacity:1; transition: .3s ease-in-out;}
+    #two #image ul li img:hover {opacity:0.7;}
+    #two #image p {text-align: center; font-size:1rem; font-style:italic;
+                      padding:85px 0;}
+    
+    
+    /* 갤러리 */
+    #gallery {padding-bottom:25px; }
+    #gallery .xi-color-helper {font-size:2.3rem; font-weight: normal; color:#000;}
+    #gallery h2 {padding-top:1px;}
+    #gallery .photo {width:80%; margin:0 auto; padding:55px 0;
+                      display:flex; justify-content: center; flex-wrap: wrap;}
+    #gallery .photo li {width:50%; padding:7px; margin:0;}
+    #gallery .photo button {border:none; width:140px; 
+          height:50px; margin:20px 7px;
+          font-size:1rem; background:#1a25ab; color:#f3e9e9;}
+    
+    #contact {padding-bottom:0px;}
+    #contact .xi-color-helper {font-size:2.3rem; 
+                            font-weight: normal; color:#000;}
+    #contact h2 {padding-top:1px;}
+    #contact ul li {float:left; width:33.3%; padding-bottom:50px;}
+    #contact ul li:last-child {padding-bottom:50px;}
+    
+    #cafeloca {display:none;}
+    
+    #location {display:block; width:80%; margin:0 auto; text-align: center;
+                padding-top:50px; padding-bottom:50px;}
+    #location i {font-size:2rem; padding-top:0px; color:#000;}
+    #location h2 {text-align: center; font-weight:normal;
+                margin-top:2px;padding-bottom:50px;}
+    #location img {width:60%; float:left; padding-right:7%;}
+    #location .lnner {float:right; width:40%;}
+    #location .inner {padding-top:7%; margin-left:50px;}
+    .inner li {text-align: left; padding-bottom:3px;
+                      margin-left:50px; font-size:0.9rem;}
+    .inner li:last-child {padding-top:20px; padding-left:50px;}
+    .inner li button {border:none; width:140px; 
+                      height:50px; font-size:1rem; 
+                      background:#1a25ab; color:#f3e9e9;}
+    .inner li button:hover {background:#0c146b; color:#cecccc;}  
+    }
+    
+    @media screen and (min-width:1150px) {
+    
+          .hamburger {margin: 35px 25px 25px 80px;}
+          header h1 a img {width:17%;}
+          #two #coffee {width:65%; margin:0px auto; padding-bottom:20px;}
+          #two #image {width:65%; margin:0 auto;}
+          #gallery .photo {width:65%;}
+          #gallery .photo li {width:33.3%; padding:5px; }
+          #location {width:65%;}
+    }

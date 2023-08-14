@@ -1,0 +1,99 @@
+﻿@charset "utf-8";
+
+ h2 {width:836px;margin:0 auto;font-size:1.7em;
+ padding-top:10px;
+ }
+ #join_mem {
+	width:836px;
+	min-height:350px;
+	border:1px solid gray;
+	margin:10px auto;
+	padding-top:20px;
+}
+
+
+#join_mem #form_join{
+	margin-left:15px;
+	width:96%;
+	height:300px;
+	border-bottom:solid 1px #cccccc;
+}
+
+#join_mem #form_join #join1 {
+	float:left;
+	width:120px;
+	height:250px;
+	background-color:#dddddd;   
+	border-bottom:solid 1px #cccccc;
+}
+
+#join_mem #form_join #join1 ul {
+	margin-top:4px; 
+}
+
+#join_mem #form_join #join1 li {
+	padding:10px; 
+}
+
+#join_mem #form_join #join2 {
+	float:left;
+	width:670px;
+	height:237px;
+}
+
+#join_mem #form_join #join2 li {
+    width:100%;
+	height:28px; 
+	padding-left:8px;
+	padding-top:6px;
+	border-bottom:solid 1px #cccccc;
+}
+
+#join_mem #form_join #join2 #id1 {
+	float:left;
+}
+
+#join_mem #form_join #join2 #id2 {
+	float:left;
+	margin-left:5px;
+}
+
+#join_mem #form_join #join2 #id3 {
+
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+#join_mem #form_join #join2 input {
+    width:150px;
+	height:18px;
+	border:solid 1px #cccccc;
+}
+
+#join_mem #form_join #join2 #nick1 {
+	float:left;
+}
+
+#join_mem #form_join #join2 input.hp {
+    width:80%;
+	height:18px;
+	border:solid 1px #cccccc;
+}
+
+#join_mem #form_join #join2 input#email1 {
+    width:80%;
+	height:18px;
+	border:solid 1px #cccccc;
+}
+
+
+#join_mem #form_join #must {
+	padding-top:15px;
+}
+
+#join_mem #button {
+	text-align:right;
+	margin-top:20px;
+	margin-right:20px;
+}
