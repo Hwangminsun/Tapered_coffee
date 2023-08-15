@@ -13,7 +13,7 @@ $email_hp=$_POST['email_hp'];
 
 $sql = "select * from member where email='$email_hp' OR hp='$email_hp'";
 $result = mysqli_query( $connect,$sql);
-$num_match = mysqli_fetch_array($result);
+$num_match = mysqli_fetch_array($result); 
 
 if(!empty($num_match)){
     echo "<script>alert('회원님의 아이디는 $num_match[id]입니다. 로그인해주세요');

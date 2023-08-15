@@ -21,6 +21,7 @@ $(function(){
     $('html, body').animate({scrollTop: 0}, 1000);
     
   });
+  
 
   $('aside').hide();
 
