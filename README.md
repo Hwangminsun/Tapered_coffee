@@ -10,13 +10,15 @@
 > 따라서 홈페이지 제작을 통해 잠재적인 고객들의 정보 접근성을 높이고  
 > 브랜드 이미지를 부각 및 상승시키는 효과를 얻고자 한다. 
 ### Skill : HTML, CSS, Javascript, Jquery, php  
-> - 웹 접근성 : skip-menu (내용 바로가기, 하단 바로가기) 적용   
+> - 웹 접근성 : skip-menu (내용 바로가기, 하단 바로가기)   
 > - W3C 유효성 검사 완료
-> - HTML5 시맨틱 태그 적용
-> - 크로스브라우징 (크롬, 엣지, 파이어폭스) test 완료
+> - HTML5 시맨틱 태그
+> - 크로스브라우징 (크롬, 엣지, 파이어폭스)
 ### 주요 구현기능
 -----------------------
  1. Main page
+  
+> ![taper_cap_size_down](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/8965dd51-88a1-4f38-b5f0-b2463dd857e3)  
   >  - Waypoint 애니메이션
   >  - 햄버거 메뉴 슬라이드
 > ```
@@ -52,56 +54,9 @@
 >```
   >  - Slick 슬라이드 
   >  - 마우스 hover 시 오버레이
-> ```
->.overlay {
->      position: absolute;
->      left: 0;
->      top: 0;
->      width: 100%;
->      height: 100%;
->      background: rgba(201, 200, 200, 0);
->      transition: background 0.5s ease;
->      cursor: pointer;
->      }
-> 
->#drop ul li:hover .overlay {
->      display: block;
->      background: rgba(228, 227, 227, 0.5);
->      }
-> 
->#drop ul li a {
->      display: inline-block;
->      transition: all .5s ease;
->      }
-> 
->#drop ul li:hover a {
->      transform: translateY(-17%);
->      }
-> 
->.button {
->      width: 145px;
->      color: #000;
->      border: 2px solid #000;
->      text-align: center;
->      transform: translateY(-150%);
->      margin: 0 auto;
->      line-height: 3rem;
->      opacity: 0;
->      transition: opacity .6s ease; 
->      cursor: pointer;
->      }
-> 
->#drop ul li:hover .button {
->      opacity: .7;
->      }
->
->#drop .button:hover {
->      color: #555;
->      border-color: #666;
->      background: #e4e4e4;
->      }
 
  2.  Sub - Gallery
+> ![taper_tab_cap_new](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/be6cd52d-b3f2-4f98-9752-cc6639cc399c)
   > - Slick 슬라이드 2개 연동 - 갤러리 기능 구현
   > - 모바일 -> 태블릿으로 브라우저 사이즈 변경 시, slick 해제 후 다시 slick 작동하도록 jquery 작성
 >```
@@ -148,9 +103,11 @@
 >// 모바일 슬릭 2개 끝
 >```
  3. Sub - Review (게시판)
+> ![review_cap_stroke](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/a0363d17-da71-48b4-9151-e7f834ec56a4)
   > - MySQL DB 테이블 설계, php 코드 작성
   > - 로그인 후 글 작성 가능하도록 설정, 이미지 첨부 기능, 글 검색, 수정, 삭제 기능 구현
  4. Sub - 회원가입, 로그인
+> ![join_mo_cap](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/ddee6577-4dab-4452-bdf1-f4534a9a00e7)
   > - MySQL DB 테이블 설계, php 코드 작성
   > - 회원가입 - 회원정보 입력 시 유효한 조건 확인하는 if 문 작성
   > - 로그인 - 아이디 찾기, 비밀번호 찾기 php 작성
