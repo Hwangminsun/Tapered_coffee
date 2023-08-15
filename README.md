@@ -54,54 +54,6 @@
 >```
   >  - Slick 슬라이드 
   >  - 마우스 hover 시 오버레이
-> ```
->.overlay {
->      position: absolute;
->      left: 0;
->      top: 0;
->      width: 100%;
->      height: 100%;
->      background: rgba(201, 200, 200, 0);
->      transition: background 0.5s ease;
->      cursor: pointer;
->      }
-> 
->#drop ul li:hover .overlay {
->      display: block;
->      background: rgba(228, 227, 227, 0.5);
->      }
-> 
->#drop ul li a {
->      display: inline-block;
->      transition: all .5s ease;
->      }
-> 
->#drop ul li:hover a {
->      transform: translateY(-17%);
->      }
-> 
->.button {
->      width: 145px;
->      color: #000;
->      border: 2px solid #000;
->      text-align: center;
->      transform: translateY(-150%);
->      margin: 0 auto;
->      line-height: 3rem;
->      opacity: 0;
->      transition: opacity .6s ease; 
->      cursor: pointer;
->      }
-> 
->#drop ul li:hover .button {
->      opacity: .7;
->      }
->
->#drop .button:hover {
->      color: #555;
->      border-color: #666;
->      background: #e4e4e4;
->      }
 
  2.  Sub - Gallery
 > ![taper_tab_cap_new](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/be6cd52d-b3f2-4f98-9752-cc6639cc399c)
