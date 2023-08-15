@@ -218,13 +218,6 @@ header .right {
   font-weight: bold;
 }
 
-.menu.open { 
-  position: fixed; 
-  left: 0;
-  top: 80px; 
-  width: 400px;
-}
-
 .menu li a:hover {
   font-weight: bold; 
   color: #1a25ab; 

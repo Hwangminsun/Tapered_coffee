@@ -1,13 +1,6 @@
 $(function(){
 
-    // $(".hamburger").click(function() {
-    //   $(".menu").toggleClass("open");
-          
-    //   });
-    
-
-
-    // 모바일
+    // 햄버거 메뉴
       function slideMenu() {
         const activeState = $(".menu").hasClass("active"); 
         $(".menu").animate({
@@ -20,7 +13,7 @@ $(function(){
             slideMenu();   
         });
 
-    // 모바일 끝
+    // 햄버거 메뉴 끝
 
   // Animate the scroll to top
   $('aside').click(function() {
@@ -41,7 +34,6 @@ $(window).scroll(function() {
     }
 });
 
-// scroll
 
 // tablet, pc right nav
 $('#right li a.r_service').click(function(){

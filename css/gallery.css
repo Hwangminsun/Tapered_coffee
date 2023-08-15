@@ -240,13 +240,6 @@ header .right {
     font-weight: bold;
   }
 
-.menu.open { 
-  position: fixed;
-  left : 0;
-  top : 80px; 
-  width : 400px;
-}
-
 .menu  li a:hover {
   font-weight: bold; 
   color: #1a25ab; 
@@ -260,8 +253,6 @@ header .right {
   height: 100%;
   padding-top: 87px;
   padding-bottom: 36px;
-  /* margin-bottom: 10px; */
-  /* border: 5px solid salmon;  */
 }
 
 h2 {
