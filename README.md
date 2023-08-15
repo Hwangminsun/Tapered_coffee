@@ -17,6 +17,8 @@
 ### 주요 구현기능
 -----------------------
  1. Main page
+  
+> ![taper_cap_size_down](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/8965dd51-88a1-4f38-b5f0-b2463dd857e3)  
   >  - Waypoint 애니메이션
   >  - 햄버거 메뉴 슬라이드
 > ```
@@ -102,6 +104,7 @@
 >      }
 
  2.  Sub - Gallery
+> ![taper_tab_cap_new](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/be6cd52d-b3f2-4f98-9752-cc6639cc399c)
   > - Slick 슬라이드 2개 연동 - 갤러리 기능 구현
   > - 모바일 -> 태블릿으로 브라우저 사이즈 변경 시, slick 해제 후 다시 slick 작동하도록 jquery 작성
 >```
@@ -148,6 +151,7 @@
 >// 모바일 슬릭 2개 끝
 >```
  3. Sub - Review (게시판)
+> ![review_cap_stroke](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/50f3fd90-3346-4461-838f-bd2bc1599327)
   > - MySQL DB 테이블 설계, php 코드 작성
   > - 로그인 후 글 작성 가능하도록 설정, 이미지 첨부 기능, 글 검색, 수정, 삭제 기능 구현
  4. Sub - 회원가입, 로그인
