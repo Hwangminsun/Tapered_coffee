@@ -151,10 +151,11 @@
 >// 모바일 슬릭 2개 끝
 >```
  3. Sub - Review (게시판)
-> ![review_cap_stroke](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/50f3fd90-3346-4461-838f-bd2bc1599327)
+> ![review_cap_stroke](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/a0363d17-da71-48b4-9151-e7f834ec56a4)
   > - MySQL DB 테이블 설계, php 코드 작성
   > - 로그인 후 글 작성 가능하도록 설정, 이미지 첨부 기능, 글 검색, 수정, 삭제 기능 구현
  4. Sub - 회원가입, 로그인
+> ![join_mo_cap](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/ddee6577-4dab-4452-bdf1-f4534a9a00e7)
   > - MySQL DB 테이블 설계, php 코드 작성
   > - 회원가입 - 회원정보 입력 시 유효한 조건 확인하는 if 문 작성
   > - 로그인 - 아이디 찾기, 비밀번호 찾기 php 작성
