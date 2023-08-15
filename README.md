@@ -1,6 +1,8 @@
 ## 반응형 웹 - 테이퍼드 커피 (Tapered Coffee)
 ### URL : http:/maysun7.dothome.co.kr
-![tap_md_image](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/749275ef-5307-4212-ac69-f1a060e38ce2)
+![taper_cap_size_down](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/8965dd51-88a1-4f38-b5f0-b2463dd857e3)
+![tapered_gallery_mobile_cap_size_down](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/510f560a-848e-4031-b750-88358694157f)
+
 ----------------------
 ### 기획 의도
 >   테이퍼드 커피는 최근 몇 년 사이에 생겨난 새로운 브랜드로,  
