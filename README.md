@@ -104,7 +104,7 @@
 >```
  3. Sub - Review (게시판)
 > ![review_cap_stroke](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/a0363d17-da71-48b4-9151-e7f834ec56a4)
-  > - MySQL DB 테이블 설계
+  > - DB 테이블 설계
 > ```
 > create table free (
 >  num int not null auto_increment,
@@ -126,7 +126,7 @@
   > - 로그인 후 글 작성 가능하도록 설정, 이미지 첨부 기능, 글 검색, 수정, 삭제 기능 구현
  4. Sub - 회원가입, 로그인
 > ![join_mo_cap](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/ddee6577-4dab-4452-bdf1-f4534a9a00e7)
-  > - MySQL DB 테이블 설계
+  > - DB 테이블 설계
   > - 회원가입 - 회원정보 입력 시 유효한 조건 확인하는 if 문 작성, 조건에 맞는 경우에 DB 테이블에 회원정보 저장
 > ```
 > // 회원정보 insert
@@ -177,3 +177,50 @@
 > ?>
 > ```
   > - 로그인 - 로그인, 아이디 찾기, 비밀번호 찾기 php 작성
+>```
+><?
+>  $id=$_POST['id']; // 넘어온 id 값
+>  if(!$id) {
+>      echo("
+>            <script>
+>              window.alert('아이디를 입력하세요.')
+>              history.go(-1) // history.go(-1) : 이전페이지로
+>            </script>
+>          ");
+>          exit;
+>  }
+>
+> // 비밀번호 비교 후 로그인
+>  $pass=$_POST['pass'];
+>
+>  if(!$pass) {
+>    echo("
+>        <script>
+>        window.alert('비밀번호를 입력하세요.')
+>        history.go(-1)
+>        </script>
+>      ");
+>      exit;
+>  }
+>  include "dbconn.php";
+>  mysqli_query($connect,'set names utf8'); // 괄호 안 뒷부분은 한글이 깨지지 않도록-
+>
+>  $sql = "select * from member where id='$id'";
+>  $result = mysqli_query($connect,$sql);
+>  
+>  $num_match = mysqli_num_rows($result); // 배열로 가져옴
+> 
+>  if(!$num_match)
+>  {
+>      echo("
+>        <script>
+>          window.alert('등록되지 않은 아이디입니다.')
+>          history.go(-1)
+>        </script>
+>      ");
+>  }
+>else
+>{
+>  $row = mysqli_fetch_array($result);
+>...
+>```
