@@ -126,17 +126,18 @@
   > - 로그인 후 글 작성 가능하도록 설정, 이미지 첨부 기능, 글 검색, 수정, 삭제 기능 구현
  4. Sub - 회원가입, 로그인
 > ![join_mo_cap](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/ddee6577-4dab-4452-bdf1-f4534a9a00e7)
-  > - MySQL DB 테이블 설계, php 코드 작성
+  > - MySQL DB 테이블 설계
+  > - 회원가입 - 회원정보 입력 시 유효한 조건 확인하는 if 문 작성, 조건에 맞는 경우에 DB 테이블에 회원정보 저장
 > ```
 > // 회원정보 insert
 > 
 > <?
->   session_start();
+>   session_start(); // 세션
 > ?>
-> <meta charset="utf-8">
-> <?
 > 
-> $id = $_POST['id'];
+> <meta charset="utf-8">
+> <? 
+> $id = $_POST['id']; // 필요한 값 받기
 > $pass = $_POST['pass'];
 > $name = $_POST['name'];
 > $hp = $_POST['hp'];
@@ -147,11 +148,11 @@
 > include "dbconn.php";       
 > mysqli_query($connect,'set names utf8');  
 >
-> $sql = "select * from member where id='$id'";
-> $result = mysqli_query($connect,$sql);
+> $sql = "select * from member where id='$id'"; // id 값으로 member 테이블에서 검색
+> $result = mysqli_query($connect, $sql);
 > $exist_id = mysqli_num_rows($result);
 >
-> if ($exist_id) {
+> if ($exist_id) { // id 중복확인
 >   echo("
 >         <script>
 >           window.alert('해당 아이디가 존재합니다.')
@@ -160,19 +161,19 @@
 >       ");
 >       exit;
 > } else {
->   $sql = "insert into member(id, pass, name, hp, email) ";
+>   $sql = "insert into member(id, pass, name, hp, email) "; // member 테이블에 회원정보 입력
 >   $sql .= "values('$id', '$pass', '$name', '$hp', '$email')";
 >   mysqli_query( $connect,$sql); 
-> } 
-> mysqli_close($connect);
+> }
+> 
+> mysqli_close($connect); // DB접속 종료
 > 
 > echo "
 > <script>
-> alert('회원가입이 정상적으로 완료되었습니다. 반갑습니다^^');
+>  alert('회원가입이 정상적으로 완료되었습니다. 반갑습니다^^');
 >  location.href = '../index.html';
 > </script>
 > ";
 > ?>
 > ```
-  > - 회원가입 - 회원정보 입력 시 유효한 조건 확인하는 if 문 작성
-  > - 로그인 - 아이디 찾기, 비밀번호 찾기 php 작성
+  > - 로그인 - 로그인, 아이디 찾기, 비밀번호 찾기 php 작성
