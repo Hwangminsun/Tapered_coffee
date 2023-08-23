@@ -127,5 +127,52 @@
  4. Sub - 회원가입, 로그인
 > ![join_mo_cap](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/ddee6577-4dab-4452-bdf1-f4534a9a00e7)
   > - MySQL DB 테이블 설계, php 코드 작성
+> ```
+> // 회원정보 insert
+> 
+> <?
+>   session_start();
+> ?>
+> <meta charset="utf-8">
+> <?
+> 
+> $id = $_POST['id'];
+> $pass = $_POST['pass'];
+> $name = $_POST['name'];
+> $hp = $_POST['hp'];
+> $email = $_POST['email'];
+>
+> $ip = $REMOTE_ADDR;
+>
+> include "dbconn.php";       
+> mysqli_query($connect,'set names utf8');  
+>
+> $sql = "select * from member where id='$id'";
+> $result = mysqli_query($connect,$sql);
+> $exist_id = mysqli_num_rows($result);
+>
+> if ($exist_id) {
+>   echo("
+>         <script>
+>           window.alert('해당 아이디가 존재합니다.')
+>           history.go(-1)
+>         </script>
+>       ");
+>       exit;
+> } else {
+>   $sql = "insert into member(id, pass, name, hp, email) ";
+>   $sql .= "values('$id', '$pass', '$name', '$hp', '$email')";
+>   mysqli_query( $connect,$sql); 
+> } 
+> mysqli_close($connect);
+> 
+> echo "
+> <script>
+> alert('회원가입이 정상적으로 완료되었습니다. 반갑습니다^^');
+>  location.href = '../index.html';
+> </script>
+> ";
+> ?>
+> ```
   > - 회원가입 - 회원정보 입력 시 유효한 조건 확인하는 if 문 작성
   > - 로그인 - 아이디 찾기, 비밀번호 찾기 php 작성
