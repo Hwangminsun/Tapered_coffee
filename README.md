@@ -127,7 +127,7 @@
  4. Sub - 회원가입, 로그인
 > ![join_mo_cap](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/ddee6577-4dab-4452-bdf1-f4534a9a00e7)
   > - DB 테이블 설계
-  > - 회원가입 - 회원정보 입력 시 유효한 조건 확인하는 if 문 작성, 조건에 맞는 경우에 DB 테이블에 회원정보 저장
+  > - 회원가입 - 회원정보 입력 시 유효한 조건 확인하는 if 문, 확인 후 DB 테이블에 회원정보 저장
 > ```
 > // 회원정보 insert
 > 
