@@ -21,7 +21,7 @@ body {
       height: 100%;
 }
 
-/* 접근성, 건너뛰기 */
+/* 접근성 */
 #skip-menu {
       position: relative;
       z-index: 3333;
@@ -164,7 +164,7 @@ header #right {
       transition: transform 0.7s ease-in-out;
 }
 
-    /* 추가한 부분 */
+    /* 모바일 하단 메뉴 동적인 구현 - 추가한 부분 */
 .bottomNav-unpin { 
       /* display: none; */
       transform: translateY(-80px);
@@ -1084,14 +1084,14 @@ h3 {
 }
 
 /* 메뉴사진 슬릭 */
-.mmnu {
+.menu_slick {
       position: relative;
       width: 75%;  
       margin: 0 auto;
       text-align: center;
 }
 
-.mmnu button {
+.menu_slick button {
       position: absolute;
       top: 50%; 
       transform: translateY(-50%);
@@ -1103,7 +1103,7 @@ h3 {
       outline: none;
 }
 
-.mmnu button.slick-prev {
+.menu_slick button.slick-prev {
       left: 10px;
       font-size: 0; 
       color: rgb(88, 87, 87);
@@ -1111,7 +1111,7 @@ h3 {
       cursor: pointer;
 }
 
-.mmnu button.slick-prev:before {
+.menu_slick button.slick-prev:before {
       font-family: FontAwesome;
       font-size: 1.4rem;
       color: #666;
@@ -1120,7 +1120,7 @@ h3 {
       cursor: pointer;
 }
 
-.mmnu button.slick-next {
+.menu_slick button.slick-next {
       right: 10px; 
       font-size: 0; 
       color: rgb(88, 87, 87);
@@ -1128,7 +1128,7 @@ h3 {
       cursor: pointer;
 }
 
-.mmnu button.slick-next:before {
+.menu_slick button.slick-next:before {
       font-family: FontAwesome;
       font-size: 1.4rem;
       color: #666;
@@ -1136,7 +1136,7 @@ h3 {
       opacity: .9; 
 }
 
-.mmnu button:hover {
+.menu_slick button:hover {
       color: #e4e4e4;
       opacity: .3;
 }
@@ -1145,12 +1145,12 @@ h3 {
       text-align: center;
 }
 
-.mmnu div.slick-slide {
+.menu_slick div.slick-slide {
       text-align: center; 
       position: relative;
 }
 
-.mmnu div.slick-slide img {
+.menu_slick div.slick-slide img {
       width: 70%; 
       border-radius: 50%;
       padding-top: 10px;
@@ -1160,7 +1160,7 @@ h3 {
       transform: translateX(22%);
 }
 
-.mmnu .m_filter {
+.menu_slick .m_filter {
       background: rgba(0,0,0,.9);
       position: absolute; 
       left: 15.1%; 
@@ -1171,11 +1171,11 @@ h3 {
       display: none;
 }
 
-.mmnu div.slick-slide img:hover .m_filter {
+.menu_slick div.slick-slide img:hover .m_filter {
       display: block;
 }
 
-.mmnu span {
+.menu_slick span {
       display: block; 
       text-align: center; 
       font-size: 1.1rem; 
@@ -1667,18 +1667,18 @@ header h1 a img {
       letter-spacing: 0; 
 }
 
-#drink .mmnu span {
+#drink .menu_slick span {
       font-size: 1.2rem; 
       padding-top: 10px; 
       letter-spacing: 1px;
 }
 
-#drink .mmnu img {
+#drink .menu_slick img {
       filter: grayscale(0);
       transition: all .3s ease-in;
 }
 
-#drink .mmnu img:hover {
+#drink .menu_slick img:hover {
       filter: grayscale(100%);
 }
 

@@ -28,7 +28,7 @@ $(function(){
 
       // index.css  - menu slick
       $(function(){
-    $('.mmnu').slick({
+    $('.menu_slick').slick({
         dots:false, /* 인디케이트 */
         arrows:true,
         autoplay: true,
