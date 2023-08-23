@@ -104,7 +104,25 @@
 >```
  3. Sub - Review (게시판)
 > ![review_cap_stroke](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/a0363d17-da71-48b4-9151-e7f834ec56a4)
-  > - MySQL DB 테이블 설계, php 코드 작성
+  > - MySQL DB 테이블 설계
+> ```
+> create table free (
+>  num int not null auto_increment,
+>  id varchar(15) not null,
+>  name  varchar(10) not null,
+>  subject varchar(100) not null,
+>  content text not null,
+>  regist_day varchar(20),
+>  hit int,
+>  is_html varchar(1),
+>  file_name_0 varchar(40),
+>  file_name_1 varchar(40),
+>  file_copied_0 varchar(30),
+>  file_copied_1 varchar(30),
+>  primary key(num)
+>)engine=innoDB charset=utf8;
+> ```
+  > - php 코드 작성
   > - 로그인 후 글 작성 가능하도록 설정, 이미지 첨부 기능, 글 검색, 수정, 삭제 기능 구현
  4. Sub - 회원가입, 로그인
 > ![join_mo_cap](https://github.com/Hwangminsun/tapered_coffee/assets/127732251/ddee6577-4dab-4452-bdf1-f4534a9a00e7)
