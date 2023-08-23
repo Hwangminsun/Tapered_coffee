@@ -1,5 +1,5 @@
 <?
-  session_start(); //받는 작업을 하기 때문에 세션을 적어준다
+  session_start();
 ?>
 
 <!doctype html>
@@ -10,21 +10,43 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/member.css">
-	<!--  <link rel="stylesheet" href="css/common.css">-->
 <style>
-body{font-size:0.8em;}
-		#top_login span {padding:0 10px;}
-		#top_login {float:right;margin-right:0;margin-top:-15px;}
-		#header {margin:10px 10px 0 0;}
-		#top_login a {text-decoration:none; color:#999;font-size: "NGothic";}
-	#top_login a:hover { color:#666; }
-	.clear { clear:both; }
-			</style>
+
+body {
+	font-size: 0.8em;
+}
+
+#top_login span {
+	padding: 0 10px;
+}
+
+#top_login {
+	float: right;
+	margin-right: 0;
+	margin-top: -15px;
+}
+
+#header {
+	margin: 10px 10px 0 0;
+}
+
+#top_login a {
+	text-decoration: none; 
+	color: #999;
+	font-size: "NGothic";
+}
+
+#top_login a:hover { 
+	color:#666; 
+}
+
+.clear { clear:both; }
+</style>
+
 <script>
   function check_id()
 	{
 		window.open("check_id.php?id=" + document.member_form.id.value, 
-		// 새창으로 띄워라, get 방식으로 member_form 파일의 id 값을 가져옴?.. ? 물음표는 get 방식....?
 				"IDcheck",
 				"left=200,top=200,width=200,height=60,scrollbars=no,resizable=yes");
 	}
@@ -41,7 +63,7 @@ body{font-size:0.8em;}
 	if (!document.member_form.pass.value)
 	{
 			alert("비밀번호를 입력하세요");
-			document.member_form.pass.focus(); //해당 칸에 커서 깜빡이는 것
+			document.member_form.pass.focus();
 			return;
 	}
 

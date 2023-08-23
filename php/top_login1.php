@@ -6,7 +6,7 @@
   if(!$_SESSION['username'] ) {
 
 ?>
-      <!--index.html 의 모바일 로그인 화면-->
+      <!--index.html 의 로그인 화면-->
       <li><a href="php/login_form.php" class="current"><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
       <li><a class="map" href=""><i class="fa-solid fa-map"></i></a></li>
       <li><a class="pen" href=""><i class="fa-solid fa-file-pen"></i></a></li>

@@ -8,25 +8,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TAPERED COFFEE</title>
+ 	<title>TAPERED COFFEE</title>
 	<link rel="stylesheet" href="../css/reset.css">
-	<!-- <link rel="stylesheet" href="../css/base.css"> -->
 	<link rel="stylesheet" href="../css/member_form.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-		
 	<script src="../js/jquery-1.11.2.min.js"></script>
   	<script src="../js/menu.js"></script>
-	  <script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>
   	<script src="../js/bottomnav.js"></script>
-
 <script>
+
 //let reg_pw2 = /(?=.*[a-zA-ZS])(?=.*?[#?!@$%^&*-]).{6,24}/; // 문자와 특수문자 조합의 6~24 자리
 // const re1 = /^[a-zA-Z0-9]{4,12}$/ ;  //가능하다
 //const re1 =/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{6,10}$/;
 //const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//위의 식도 가능하다
 //const re=/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
-
 
 // id 중복확인
 function check_id()

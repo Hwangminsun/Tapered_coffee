@@ -241,11 +241,6 @@ input, textarea {
 	margin: 2px 0 2px 0;
 	display: flex;
 }
-/*  */
-/* .write_line {
-  	width: 100%; 
-	border-bottom: solid 1px #cccccc;
-} */
 
 #write_form #write_row3 > .col1 {
 	height: 100%;
@@ -255,7 +250,6 @@ input, textarea {
 }
 
 #write_form #write_row3 > .col2 {
-	/* margin-left: 8px; */
 	width: 70%;
 	text-align: left;
 }
@@ -275,12 +269,6 @@ input, textarea {
 	height: 100%;
 }
 
-/* #write_form #write_row1 .col3 {
-	float:left;
-	margin-top: 4px;
-	margin-left: 100px;
-} */
-
 #write_button {
 	margin-top: 28px;
 	width: 100%;
@@ -297,12 +285,9 @@ input, textarea {
 #view_title {
 	height: 35px;
 	line-height: 32px;
-	/* padding:10px 8px 8px 8px;   */
 	border-top:solid 2px #aaaaaa;
 	background-color:#eeeeee;
-	margin-bottom: 5px;
-	/* border: 1px solid #000; */
-	
+	margin-bottom: 5px;	
 }
 
 #view_title1 {
@@ -310,7 +295,6 @@ input, textarea {
 	width:45%;
 	margin-left: 20px;
 	margin-top: 0;
-	/* background-color:#eeeeee; */
 }
 
 #view_title2 {
@@ -318,7 +302,6 @@ input, textarea {
 	width:50%;
 	text-align:right;
 	margin-top: 0;
-
 }
 
 #view_content {
@@ -342,7 +325,6 @@ input, textarea {
 @media screen and (min-width:768px) { 
 
 		/* list css */
-
 
 	#content #col2 {
 		width: 85%;
@@ -403,37 +385,39 @@ input, textarea {
 	margin-bottom: 1.5px;
 }
 		
-		#list_item > #list_item2 {
-			width: 50%;
-			letter-spacing: 1px;
-		}
-		#list_item > #list_item3 {
-			width: 13%;
-			text-align: center;
-			padding-right: 3px;
-		}
+#list_item > #list_item2 {
+	width: 50%;
+	letter-spacing: 1px;
+}
 		
-		#list_item > #list_item4 {
-			width: 17%;
-			text-align: center;
-		}
+#list_item > #list_item3 {
+	width: 13%;
+	text-align: center;
+	padding-right: 3px;
+}
 		
-		#page_button {
-			display: flex;
-			justify-content: space-around;
-			margin-top: 17px;
-		}
+#list_item > #list_item4 {
+	width: 17%;
+	text-align: center;
+}
 		
-		#page_num {
-			width: 70%;
-			text-align: center;
-		}
+#page_button {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 17px;
+}
 		
-		#button {
-			display: flex;
-			justify-content: flex-end;
-			width: 30%;
-			margin-bottom: 7px;
-			padding-right: 12px;
-		}
+#page_num {
+	width: 70%;
+	text-align: center;
+}
+		
+#button {
+	display: flex;
+	justify-content: flex-end;
+	width: 30%;
+	margin-bottom: 7px;
+	padding-right: 12px;
+	
+	}
 }

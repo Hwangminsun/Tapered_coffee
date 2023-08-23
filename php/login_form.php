@@ -12,14 +12,10 @@
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/login_form.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-		
 	<script src="../js/jquery-1.11.2.min.js"></script>
-  	<script src="../js/menu.js"></script>
-	  <script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>
-  	<script src="../js/bottomnav.js"></script>
-
-<script>
-</script>		
+  <script src="../js/menu.js"></script>
+	<script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>
+  <script src="../js/bottomnav.js"></script>	
 </head>
 
 <body>

@@ -6,7 +6,6 @@
   $id=$_POST['id'];
   $pass=$_POST['pass'];
   $name=$_POST['name'];
-  // $nick=$_POST['nick'];
   $hp = $_POST['hp'];
   $email = $_POST['email'];
 

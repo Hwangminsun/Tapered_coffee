@@ -11,8 +11,7 @@
   <title>TAPERED COFFEE</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/pw_screen.css">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-		
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">	
 	<script src="../js/jquery-1.11.2.min.js"></script>
   <script src="../js/menu.js"></script>
 	<script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>

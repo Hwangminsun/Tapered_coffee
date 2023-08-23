@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 	<?
 
-   include "dbconn.php"; //db연결소스
+   include "dbconn.php"; // db 연결
 
 $sql = "delete from join_mem where id = '$_SESSION[userid]'"; 
 

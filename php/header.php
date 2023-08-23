@@ -12,13 +12,13 @@
 		<link rel="stylesheet" href="css/condition.css">
 
 		<style>
-		#header {height:100px;}
-		#top_login span {padding:0 10px;}
-		#top_login {float:right;margin:10px 10px 0 0;}
-		#menu {width:100%; height:50px;line-height:50px; background:#000;}
-		#menu ul {display:flex; text-align:center; width:50%; margin:0 auto;}
-		#menu ul li {width:33.33%;}
-		#menu ul li a {color:#fff;display:inline-block;}
+		#header { height: 100px; }
+		#top_login span { padding: 0 10px; }
+		#top_login { float: right; margin: 10px 10px 0 0; }
+		#menu { width: 100%; height: 50px; line-height: 50px; background: #000; }
+		#menu ul { display: flex; text-align: center; width: 50%; margin: 0 auto; }
+		#menu ul li { width: 33.33%; }
+		#menu ul li a { color: #fff; display: inline-block;}
 		
 
 		</style>

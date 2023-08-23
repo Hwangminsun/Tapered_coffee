@@ -17,9 +17,7 @@
 		<script src="../js/menu.js"></script>
   		<script src="../js/bottomnav.js"></script>
 </head>
-
 <style>
-
 #notice {
 	width: 350px;
 	height: 250px;
@@ -42,7 +40,6 @@
 }
 
 #notice p a {
-	/* font-weight: bold; */
 	color: #c97878;
 }
 

@@ -15,7 +15,9 @@
           exit;
   }
   // 비밀번호 if 문도 써줘야. 비밀번호도 앞전 파일의 폼에 있고, 비밀번호 값을 받아와서 비교해서 로그인.
+
   $pass=$_POST['pass'];
+
   if(!$pass) {
     echo("
         <script>
@@ -32,7 +34,7 @@
   $sql = "select * from member where id='$id'";
   $result = mysqli_query($connect,$sql);
   
-  $num_match = mysqli_num_rows($result); //배열로 가져옴
+  $num_match = mysqli_num_rows($result); // 배열로 가져옴
  
   if(!$num_match)
   {
