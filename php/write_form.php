@@ -2,31 +2,30 @@
 	session_start(); 
 
 	$table = "free";
-	$ripple = "free_ripple";
+	// $ripple = "free_ripple";
 
 	include "dbconn.php";
 
-$num=$_GET['num'];
-$page=$_GET['page'];
+	$num=$_GET['num'];
+	$page=$_GET['page'];
 	$mode=$_GET['modify'];
 
 	if (isset($_GET["mode"]))
-	$mode = $_GET["mode"];
-  else
-	$mode = "";
-
-
+		$mode = $_GET["mode"];
+  	else
+		$mode = "";
 	
+
 	if ($mode=="modify")
 	{
 		$sql = "select * from $table where num=$num";
 		$result = mysqli_query( $connect,$sql);
-		//$row = mysqli_fetch_array($result);  
+		 
 		if ($result){
-			while($row = mysqli_fetch_array($result)){     
+			while($row = mysqli_fetch_array($result)) {     
 	
-		$item_subject     = $row['subject'];
-		$item_content     = $row['content'];
+		$item_subject = $row['subject'];
+		$item_content = $row['content'];
 		$item_file_0 = $row['file_name_0'];
 		$item_file_1 = $row['file_name_1'];
 		$item_file_2 = $row['file_name_2'];
@@ -34,10 +33,10 @@ $page=$_GET['page'];
 		$copied_file_0 = $row['file_copied_0'];
 		$copied_file_1 = $row['file_copied_1'];
 		$copied_file_2 = $row['file_copied_2'];
+		}
 	}
+}
 
-}
-}
 ?>
 <!doctype html>
 <html lang="ko">
@@ -69,13 +68,14 @@ $page=$_GET['page'];
           document.board_form.content.focus();
           return;
       }
+
       document.board_form.submit();
+
    }
 </script>
 </head>
 
 <style>
-
 #notice {
 	width: 350px;
 	height: 250px;
@@ -117,13 +117,13 @@ $page=$_GET['page'];
 }
 
 h2 {
-		font-size: 2rem;
-		font-weight: bold;
-		letter-spacing: 1px;
-		text-align: center;
-	}
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+}
 
-	#wrap_1 { 
+#wrap_1 { 
 	width: 55%;
 	min-width: 750px;
 	/* margin: 0 auto; */
@@ -135,15 +135,11 @@ h2 {
 	min-height: 500px;
 }
 
-form {
+form, #write_form {
 	width: 100%;
 }
 
-#write_form {
-	width: 100%;
-}
-
-	#write_row4, #write_row5 {
+#write_row4, #write_row5 {
 	display: flex;
 	height: 32px;
 	line-height: 32px;
@@ -156,17 +152,15 @@ form {
 
 #write_row5 {
 	border-bottom: 2px solid #cccccc;
-	}
+}
 
 #write_row4 .col1, #write_row5 .col1 {
 	width: 30%;
-	/* border: 1px solid #000; */
 	background: #eeeeee;
 }
 
 #write_row4 .col2, #write_row5 .col2 {
 	width: 70%;
-	/* border: 1px solid blue; */
 	text-align: left;
 	padding-left: 6px;
 }
@@ -178,16 +172,11 @@ form {
 textarea {
 	text-align: left;
 	padding:0;
-}
+	}
 }
 </style>
 
 <body>
-	<!-- <ul id="skip-menu">
-    <li><a href="#wrap_1">&#187; 내용 바로가기</a></li>
-    <li><a href="#footer">&#187; 하단 바로가기</a></li>
-  </ul> -->
-
   <header class="cf">
     <!-- 모바일 햄버거 버튼 -->
     <div id="ham-wrap">
@@ -239,8 +228,8 @@ textarea {
 		<div id="write_form_title">
 			<img src="img/write_form_title.gif">
 		</div>	
-		<?
-
+		
+<?
 if($mode=="modify")
 {
 ?>
@@ -255,22 +244,20 @@ else
 }
 ?>
 		<div id="write_form"> <!-- 게시판 틀 시작 -->
-			<!-- <div class="write_line"></div> -->
 			<div id="write_row1">
-				<div class="col1"> 아이디 </div>
-				<div class="col2"><?=$_SESSION['userid']?></div>
+			<div class="col1"> 아이디 </div>
+			<div class="col2"><?=$_SESSION['userid']?></div>
 
-				<?
+<?
 	if( $userid && ($mode != "modify"))
 	{
 ?>
-				<div class="col3"><input type="checkbox" name="html_ok" value="y"> HTML 쓰기</div>
+			<div class="col3"><input type="checkbox" name="html_ok" value="y"> HTML 쓰기</div>
 <?
 	}
 ?>			
 			</div>
 		
-			<!-- <div class="write_line sub_top"></div> -->
 			<div id="write_row2">
 				<div class="col1">제목</div>
 			  	<div class="col2">
@@ -278,7 +265,6 @@ else
 				</div>
 			</div>
 
-			<!-- <div class="write_line"></div> -->
 			<div id="write_row3">
 				<div class="col1"> 내용 </div>
 			    <div class="col2">
@@ -286,23 +272,28 @@ else
 				</div>
 			</div>
 	
-			<div id="write_row4"><div class="col1"> 이미지파일1</div>
-			                     <div class="col2"><input type="file" name="upfile[]"></div>
+			<div id="write_row4">
+				<div class="col1"> 이미지파일1</div>
+			     <div class="col2">
+					<input type="file" name="upfile[]">
+				</div>
 			</div>
 
 			<? 	if ($mode=="modify" && $item_file_0)
 {
 	?>
-<div class="delete_ok"> <?=$item_file_0?> 파일이 등록되어 있습니다. <input type="checkbox" name="del_file[]" value="0"> 삭제</div>
-			<div class="clear"></div>
+		<div class="delete_ok"> <?=$item_file_0?> 파일이 등록되어 있습니다. <input type="checkbox" name="del_file[]" value="0"> 삭제</div>
+		<div class="clear"></div>
 <?
 	}
 ?>
 
-<div class="write_line"></div>
-			<div id="write_row5"><div class="col1"> 이미지파일2  </div>
-			                     <div class="col2"><input type="file" name="upfile[]"></div>
+		<div class="write_line"></div>
+		<div id="write_row5">
+			<div class="col1"> 이미지파일2  </div>
+			<div class="col2"><input type="file" name="upfile[]"></div>
 			</div>
+			
 <? 	if ($mode=="modify" && $item_file_1)
 	{
 ?>

@@ -1,9 +1,10 @@
 <? 
 	session_start(); 
+
 	include "dbconn.php";
 	$table = "free";
 
-  $num=$_GET['num'];
+  	$num=$_GET['num'];
 	$id=$_POST['id'];
 	$page=$_GET['page'];
 	$subject=$_POST['item_subject'];
@@ -11,33 +12,31 @@
 	$mode = $_GET['modify'];
 
 
-	 if (isset($_GET["mode"]))
+	if (isset($_GET["mode"]))
 	 	$mode = $_GET["mode"];
-   else
+   	else
 	 	$mode = "";
 
-
 	$sql = "select * from $table where num=$num";
-	$result = mysqli_query( $connect,$sql);
-  //  $row = mysqli_fetch_array($result);       
+	$result = mysqli_query( $connect,$sql);      
 	
-		if ($result){
-			while($row = mysqli_fetch_array($result)){
+		if ($result) {
+			while ($row = mysqli_fetch_array($result)) {
 
-	$item_num     = $row['num'];
-	$item_id      = $row['id'];
-	$item_name    = $row['name'];
-	$item_hit     = $row['hit'];
+	$item_num = $row['num'];
+	$item_id = $row['id'];
+	$item_name = $row['name'];
+	$item_hit = $row['hit'];
 
-	$image_name[0]   = $row['file_name_0'];
-	$image_name[1]   = $row['file_name_1'];
+	$image_name[0] = $row['file_name_0'];
+	$image_name[1] = $row['file_name_1'];
 	$image_copied[0] = $row['file_copied_0'];
 	$image_copied[1] = $row['file_copied_1'];
 
-  $item_date    = $row['regist_day'];
+  	$item_date = $row['regist_day'];
 	$item_subject = str_replace(" ", "&nbsp;", $row['subject']);
 	$item_content = $row['content'];
-	$is_html      = $row['is_html'];
+	$is_html = $row['is_html'];
 
 	if ($is_html!="y")
 	{
@@ -105,11 +104,9 @@
         }
     }
 </script>
-
 </head>
 
 <style>
-
 #notice {
 	width: 350px;
 	height: 250px;
@@ -132,16 +129,14 @@
 }
 
 #notice p a {
-	/* font-weight: bold; */
 	color: #c97878;
 }
 
 #notice p a:hover {
 	color: #ba5151;
 }
+
 #wrap {display: none;}
-
-
 
 @media screen and (min-width:768px) { 
 
@@ -149,13 +144,15 @@
 	display: none;
 }
 
-#wrap {display: block;}
+#wrap {
+	display: block;
+}
 
 h2 {
-		font-size: 2rem;
-		font-weight: bold;
-		letter-spacing: 1px;
-		text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
 	}
 
 #wrap {
@@ -165,10 +162,8 @@ h2 {
 	top: 132px;
 	left: 50%;
 	transform: translateX(-50%);
-	/* height: 130%; */
 	min-height: 500px;	
 	padding-bottom: 100px;
-	/* margin-bottom: 80px; */
 }
 
 footer {
@@ -176,20 +171,11 @@ footer {
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	}
 }
-}
-
-
-
-
 </style>
 
 <body>
-<!-- <div id="skip-menu">
-    <a href="#wrap">&#187; 내용 바로가기</a>
-    <a href="#footer">&#187; 하단 바로가기</a>
-  </div> -->
-
   <header class="cf">
     <!-- 모바일 햄버거 버튼 -->
     <div id="ham-wrap">
@@ -246,16 +232,17 @@ footer {
 
 		<div id="view_content">
 
-		<?
-	for ($i=0; $i<3; $i++)
-	{
-		if ($image_copied[$i])
-		{
+<?
+	for ($i=0; $i<3; $i++) {
+
+		if ($image_copied[$i]) {
+
 			$img_name = $image_copied[$i];
 			$img_name = "./data/".$img_name;
 			$img_width = $image_width[$i];
 			
 			echo "<img src='$img_name' width='$img_width'>"."<br><br>";
+
 		}
 	}
 ?>
@@ -273,32 +260,31 @@ footer {
 $userid=$_SESSION['userid'];
 $item_id=$_SESSION['userid'];
 	
-if($userid && ($userid==$item_id))
-	{
+if ($userid && ($userid==$item_id))	{
+
 ?>
-				<a href="write_form.php?table=<?=$table?>&mode=modify&num=<?=$num?>&page=<?=$page?>">
-					<img src="img/modify.png">
-				</a>&nbsp;
-				<a href="javascript:del('delete2.php?table=<?=$table?>&num=<?=$num?>')">
-					<img src="img/delete.png">
-				</a>&nbsp;
+			<a href="write_form.php?table=<?=$table?>&mode=modify&num=<?=$num?>&page=<?=$page?>">
+				<img src="img/modify.png">
+			</a>&nbsp;
+			<a href="javascript:del('delete2.php?table=<?=$table?>&num=<?=$num?>')">
+				<img src="img/delete.png">
+			</a>&nbsp;
 <?
 	}
 ?>
+
 <? 
-	if($userid)
-	{
+	if($userid)	{
 ?>
-				<a href="write_form.php?table=<?=$table?>"><img src="img/write.png"></a>
+			<a href="write_form.php?table=<?=$table?>"><img src="img/write.png"></a>
 <?
 	}
 ?>
 		</div>
-		<!-- <div class="clear"></div> -->
-
 	</div> <!-- end of col2 -->
   </div> <!-- end of content -->
 </div> <!-- end of wrap -->
+
 <footer>
   <div id="footer"><a href="https://www.instagram.com/taperedcoffee/"
     target="_blank">photo by TAPERED COFFEE INSTAGRAM</a></div>

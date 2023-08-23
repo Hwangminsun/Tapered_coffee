@@ -61,7 +61,7 @@ function check_id()
 	if (!document.member_form.pass.value)
 	{
 			alert("비밀번호를 입력하세요");
-			document.member_form.pass.focus(); //해당 칸에 커서 깜빡이는 것
+			document.member_form.pass.focus(); //해당 칸에 커서 위치
 			return;
 	}
 
@@ -96,7 +96,7 @@ function check_id()
 	if (document.member_form.pass.value !=
 			document.member_form.pass_confirm.value)
 	{
-		alert("비밀번호가 일치하지 않습니다.\n다시 입력해주세요."); /* ok */
+		alert("비밀번호가 일치하지 않습니다.\n다시 입력해주세요.");
 		document.member_form.pass.focus();
 		document.member_form.pass.select();
 		return;
@@ -106,8 +106,8 @@ function check_id()
 
 	const re2=/^01([0|1|6|7|9])?([0-9]{3,4})?([0-9]{4})$/;
 
-	// 하이픈 제거 코드
-// 	const replaceHyphen = function(hp1) {
+// 하이픈 제거 코드
+// const replaceHyphen = function(hp1) {
 
 // return re2.toString().replace(/-/gi, "");
 
@@ -130,17 +130,6 @@ function check_id()
 		document.member_form.submit();
 }
 
-// function reset_form() {
-// 	document.member_form.id.value = "";
-// 	document.member_form.pass.value = "";
-// 	document.member_form.pass_confirm.value = "";
-// 	document.member_form.name.value = "";
-// 	document.member_form.nick.value = "";
-// 	document.member_form.hp.value = "";
-// 	document.member_form.email.value = "";
-// 	document.member_form.id.focus();
-// 	return;
-// }
 </script>		
 </head>
 
@@ -151,7 +140,6 @@ function check_id()
   </div>
 
   <!-- header -->
-
   <header class="cf">
     <!-- 모바일 햄버거 버튼 -->
     <div id="ham-wrap">

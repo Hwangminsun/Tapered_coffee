@@ -10,13 +10,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>TAPERED COFFEE</title>
 		<link rel="stylesheet" href="../css/reset.css">
-		<!-- <link rel="stylesheet" href="css/base.css"> -->
 		<link rel="stylesheet" href="css/list.css">
 		<link rel="stylesheet" href="css/greet.css">
 		<script src="https://kit.fontawesome.com/dbb7afa741.js" crossorigin="anonymous"></script>
-  	<script src="../js/jquery-1.11.2.min.js"></script>
+  		<script src="../js/jquery-1.11.2.min.js"></script>
 		<script src="../js/menu.js"></script>
-  	<script src="../js/bottomnav.js"></script>
+  		<script src="../js/bottomnav.js"></script>
 </head>
 
 <style>
@@ -82,11 +81,6 @@ h2 {
 </style>
 
 <body>
-  <!-- <div id="skip-menu">
-    <a href="#wrap">&#187; 본문 바로가기</a>
-    <a href="#footer">&#187; 하단 바로가기</a>
-  </div> -->
-
   <header class="cf">
     <!-- 모바일 햄버거 버튼 -->
     <div id="ham-wrap">
@@ -128,7 +122,6 @@ h2 {
 	$page = $_GET['page'];
  	$num = $_GET['num'];
  	$id = $_POST['id'];
-
 	$find = $_POST['find'];
 	$search = $_POST['search'];
 

@@ -1,5 +1,5 @@
 <?
-  session_start(); //받는 작업을 하기 때문에 세션을 적어준다
+  session_start();
 ?>
 <meta charset="utf-8">
 <?
@@ -8,8 +8,6 @@ include "dbconn.php";
 mysqli_query($connect,'set names utf8');
 
 $email_hp=$_POST['email_hp'];
-// $name=$_POST['name'];
-// $hp=$_POST['hp'];
 
 $sql = "select * from member where email='$email_hp' OR hp='$email_hp'";
 $result = mysqli_query( $connect,$sql);

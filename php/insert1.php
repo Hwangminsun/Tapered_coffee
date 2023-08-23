@@ -176,7 +176,7 @@ $mode = $_GET['modify'];
 		$sql .= "'$upfile_name[0]', '$upfile_name[1]', '$copied_file_name[0]', '$copied_file_name[1]')";
 		mysqli_query( $connect,$sql);  // $sql 에 저장된 명령 실행
 	}
-	mysqli_close($connect);                // DB 연결 끊기
+	mysqli_close($connect);  // DB 접속 종료
 
 	echo "
 	   <script>

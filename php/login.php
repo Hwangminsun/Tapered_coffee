@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <?
   $id=$_POST['id']; // 넘어온 id 값, post 방식.
-  if(!$id) { //느낌표는 같지 않다, 아니다 라는 뜻
+  if(!$id) {
       echo("
             <script>
               window.alert('아이디를 입력하세요.')
@@ -64,11 +64,8 @@ else
 
       $userid = $row['id'];
       $username = $row['name'];
-      // $usernick = $row['nick'];
-
       $_SESSION['userid'] = $userid;
       $_SESSION['username'] = $username;
-      // $_SESSION['usernick'] = $usernick;
 
       echo("
       <script>
@@ -76,7 +73,6 @@ else
         location.href = '../index.html'; 
       </script>
     ");
-      // 로긴했으면 index.html 로 이동
     }
   }
 ?>
