@@ -178,8 +178,10 @@
 > ```
   > - 로그인 - 로그인, 아이디 찾기, 비밀번호 찾기 php 작성
 >```
+>...
+>
 ><?
->  $id=$_POST['id']; // 넘어온 id 값
+>  $id=$_POST['id']; // 앞에서 받은 id 값
 >  if(!$id) {
 >      echo("
 >            <script>
@@ -222,5 +224,6 @@
 >else
 >{
 >  $row = mysqli_fetch_array($result);
+>
 >...
 >```
